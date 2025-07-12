@@ -1,0 +1,76 @@
+/* Custom styles for Margarita's Kitchen */
+
+/* Additional custom animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.float-animation {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dc2626;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b91c1c;
+}
+
+/* Focus styles for better accessibility */
+.focus-visible:focus {
+    outline: 2px solid #dc2626;
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .animate-fade-in,
+    .animate-slide-up,
+    .animate-pulse-slow {
+        animation: none !important;
+    }
+    
+    .btn-hover:hover {
+        transform: none !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .text-gray-600 {
+        color: #000000 !important;
+    }
+    
+    .text-gray-500 {
+        color: #000000 !important;
+    }
+    
+    .border-gray-300 {
+        border-color: #000000 !important;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .animate-fade-in,
+    .animate-slide-up,
+    .animate-pulse-slow {
+        animation: none !important;
+    }
+    
+    .btn-hover:hover {
+        transform: none !important;
+    }
+} 

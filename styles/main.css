@@ -1,0 +1,84 @@
+/* Main Styles for Margarita's Kitchen */
+
+/* Gradient Background */
+.gradient-bg {
+    background: linear-gradient(135deg, #fef3c7 0%, #e09f84 25%, #e4925f 50%, #dc2626 75%, #ed9696 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Product Styling */
+.product-shadow {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.product-container {
+    transition: all 0.3s ease;
+}
+
+.product-container:hover {
+    transform: translateY(-10px);
+}
+
+.product-container:hover .product-shadow {
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.product-badge {
+    transition: all 0.3s ease;
+}
+
+.product-container:hover .product-badge {
+    transform: scale(1.1);
+    background-color: #ef4444;
+}
+
+.btn-hover {
+    transition: all 0.3s ease;
+}
+
+.btn-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(220, 38, 38, 0.3);
+}
+
+/* Glass Effect */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Social Media Links */
+.social-link {
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .glass-effect {
+        backdrop-filter: blur(8px);
+    }
+} 
