@@ -9,3 +9,4 @@
 - **SVG Graphics**: Scalable placeholder images
 
 **Built with ❤️ for Margarita's Kitchen** 
+More contents to be added
